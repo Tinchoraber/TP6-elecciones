@@ -1,0 +1,9 @@
+<form action='@Url.Action("GuardarCandidato","Home")' method="post">
+    <input type="hidden" name="IdPartido" value="@ViewBag.idPartidoo">
+    <input type="text" name="Apellido" placeholder="Apellido" required>
+    <input type="text" name="Nombre" placeholder="Nombre" required> 
+    <input type="date" name="FechaNacimiento" placeholder="Fecha de nacimiento" required> 
+    <input type="text" name="Foto" placeholder="Foto" required>
+    <input type="text" name="Postulacion" placeholder="Postulacion" required>
+    <button type="submit">Agregar candidato</button>
+</form>

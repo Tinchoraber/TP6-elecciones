@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: rgba(79, 197, 226, 0.589);
+}
+
+
+
+.cards{
+  display: flex;
+  margin-top: 15%;
+ 
+}
+.contenedor
+{
+  transition: 2s;
+}
+.contenedor:hover
+{
+  transform: scale(1.1);
+}
+ .contenedor{
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  height: 330px;
+  margin-left: 230px;
+  background-color: rgba(125, 160, 211, 0.623);
+  border: solid black;
+  border-radius: 3px;
+}
+.contenedor-detallePartido{
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 7%;
+  margin-left: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+ .contenedor img{
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 75px;
+}
+.fecha h2{
+  padding: 3px;
+  font-size: 14px;
+}
+ .contenedor h2{
+  padding: 2px;
+  font-size: 100%;
+  text-align: center;
+  color: black;
+}
+a{
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.titulo h1{
+  padding-left: 63%;
+  margin: 4%;
+}
+
+
+
+ button{
+  border-color: #ffffff;
+}
+
+.nosotros{
+  width: 120%;
+  display: flex;
+
+  margin-left:15%;
+}
+.noso{
+  width: 23%;
+  margin: 4rem;
+  padding: 3%;
+  text-align: center;
+  border: 1px solid  #258cfb;
+  border-radius: 20px
+}
+.sobreNosotrosTitulo{
+  display: flex;
+  margin-left: 60%;
+  color: rgb(253, 120, 80);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nosotros img{
+  width: 100%;
+  height: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-candidato:hover
+{
+  transform: scale(1.075);
+}
+.cards-candidato{
+  display: flex;
+  gap: 2%;
+  padding-left: 30%;
+}
+ .contenedor-candidato{
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  transition: 1s;
+  background-color: rgba(125, 160, 211, 0.623);
+  border: solid black;
+  border-radius: 3px;
+}
+.item-candidato{
+  list-style-type: none;
+  
+}
+.imagen-candidato{
+  width: 100%;
+}
+.item-candidato p{
+  font-size: 15px ;
+  text-align: center;
+color: white;  
+}
+.item-candidato h2{
+  font-size: 30px ;
+  text-align: center;
+  color: gray;  
+}
+.button-eliminar{
+  margin-left: 30%;
+  margin-top: 2%;
+  padding: 1%;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-color: rgb(255, 0, 0);
+  font-weight: bold;
+  
+}
+.button{
+  padding-inline: 14%;
+  font-weight: bold;
+  padding: 2%;
+  background-color: rgb(0, 255, 55);
+  color: white;
+  border-color: rgb(0, 255, 55);
+}
+.contenedor-detallePartido h1{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: bisque;
+}
+.contenedor-detallePartido img{
+  width: 25%;
+}
+
+
+
+
+
+
+.container-elecciones h1 {
+  text-align: center;
+  color: #3f51b5;
+}
+
+.container-elecciones p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+.container-elecciones {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-left: 39%;
+  margin-top: 4%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+.btn p{
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #1a237e;
+  color: black;
+}

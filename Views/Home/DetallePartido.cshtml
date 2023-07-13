@@ -1,0 +1,31 @@
+
+   
+    <div class="contenedor-detallePartido">
+        <h1>@ViewBag.InfoPartido.Nombre</h1>
+        <img src="/img/@ViewBag.InfoPartido.Logo">
+        <h2 class="fecha">Fecha de Fundacion: @ViewBag.InfoPartido.FechaFundacion.Year / @ViewBag.InfoPartido.FechaFundacion.Month / @ViewBag.InfoPartido.FechaFundacion.Day</h2>
+        <h2>Diputados: @ViewBag.InfoPartido.CantidadDiputados</h2>
+        <h2>Senadores: @ViewBag.InfoPartido.CantidadSenadores</h2>
+        <a href="@ViewBag.InfoPartido.SitioWeb" target="_blank"><h2>Sitio Web</h2></a>
+        <a href='@Url.Action("AgregarCandidato", new {idPartido = @ViewBag.InfoPartido.IdPartido})'><button class="button">Agregar Candidato</button></a>
+    </div>
+ 
+        <div class="cards-candidato">
+            @foreach (Candidato item in ViewBag.ListaCandidatos)
+            {
+                
+
+                <ul class="contenedor-candidato">
+
+                <li class="item-candidato"> <h2>@item.Nombre</h2></li> 
+                <li class="item-candidato"><p> @item.Apellido</p></li>
+                <li class="item-candidato"><p> @item.Postulacion</p></li> 
+                <li class="item-candidato"><p> @item.FechaNacimiento.Year / @item.FechaNacimiento.Month / @item.FechaNacimiento.Day</p></li>     
+                <li class="item-candidato"><img class="imagen-candidato" src="@item.Foto"></li>
+                <a href='@Url.Action("EliminarCandidato", new {idPartido = @item.IdPartido, idCandidato = @item.IdCandidato})'><button class="button-eliminar">Eliminar Candidato</button></a>
+                
+                </ul>
+
+                
+            }
+        </div>
